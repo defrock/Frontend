@@ -1,0 +1,445 @@
+.watch_tablo {
+  display: block;
+  position: absolute;
+  left: 479px;
+  top: 109px;
+}
+.circle{
+  width: 300px;
+  height: 300px;
+  margin: 84px 463px;
+  border: 10px solid grey;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0px 1px 10px 5px #000;
+}
+.container_arrow {
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  animation: tick 1s normal infinite linear;
+  position: absolute;
+ }
+@keyframes tick {
+  0% { transform: rotate(0deg); }
+  8.3% { transform:rotate(5.5deg); }
+  100% { transform: rotate(0deg);}   
+}
+
+.arrow {
+  width: 148px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  animation: a360 60s infinite linear;
+  animation-fill-mode: forwards;
+}        
+.minut {
+  width: 140px;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  animation: a360 3600s infinite linear;
+  animation-fill-mode: forwards;
+}
+@keyframes a360 {
+  0% { transform: rotate(-90deg) }
+  100% { transform: rotate(270deg) }
+}
+
+.hour > ul {
+  list-style: none;
+}
+.vert {
+  position: absolute;
+  margin: 242px 485px;
+  display: inline-block;
+  width: 95px;
+  border: 3px solid #000;
+}
+
+
+/*@keyframes tick {
+  0% { 
+    transform: rotate(-90deg); 
+  }
+  0.5% { 
+    transform:rotate(-84deg); 
+  }
+  1% {
+    transform: rotate(-84deg);
+  }
+  1.5% {
+    transform: rotate(-78deg);
+  }
+  2% {
+    transform: rotate(-78deg);
+  }
+  2.5% {
+    transform: rotate(-72deg);
+  }
+  3% {
+    transform: rotate(-72deg);
+  }
+  3.5% {
+    transform: rotate(-66deg);
+  }
+  4% {
+    transform: rotate(-66deg);
+  }
+  4.5% {
+    transform: rotate(-61deg);
+     }
+  5% {
+    transform: rotate(-61deg);
+  }
+
+  5.5% {
+    transform: rotate(-55deg);
+  }
+  6% {
+    transform: rotate(-55deg);
+  }
+  6.5% {
+    transform: rotate(-49deg);
+  }
+  7% {
+    transform: rotate(-49deg);
+  }
+  7.5% {
+    transform: rotate(-43deg);
+  }
+  8% {
+    transform: rotate(-43deg);
+  }
+  8.5% {
+    transform: rotate(-37deg);
+  }
+  9% {
+    transform: rotate(-37deg);
+  }
+  9.5% {
+    transform: rotate(-31deg);
+  }
+  10% {
+    transform: rotate(-31deg);
+  }
+
+
+ 10.5% { 
+    transform:rotate(-25deg); 
+  }
+  11% {
+    transform: rotate(-25deg);
+  }
+  11.5% {
+    transform: rotate(-19deg);
+  }
+  12% {
+    transform: rotate(-19deg);
+  }
+  12.5% {
+    transform: rotate(-12deg);
+  }
+  13% {
+    transform: rotate(-12deg);
+  }
+  13.5% {
+    transform: rotate(-6deg);
+  }
+  14% {
+    transform: rotate(-6deg);
+  }
+  14.5% {
+    transform: rotate(0deg);
+     }
+  15% {
+    transform: rotate(0deg);
+  }
+
+  15.5% {
+    transform: rotate(6deg);
+  }
+  16% {
+    transform: rotate(6deg);
+  }
+  16.5% {
+    transform: rotate(12deg);
+  }
+  17% {
+    transform: rotate(12deg);
+  }
+  17.5% {
+    transform: rotate(18deg);
+  }
+  18% {
+    transform: rotate(18deg);
+  }
+  18.5% {
+    transform: rotate(24deg);
+  }
+  19% {
+    transform: rotate(24deg);
+  }
+  19.5% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+
+   20.5% { 
+    transform:rotate(36deg); 
+  }
+  21% {
+    transform: rotate(36deg);
+  }
+  21.5% {
+    transform: rotate(42deg);
+  }
+  22% {
+    transform: rotate(42deg);
+  }
+  22.5% {
+    transform: rotate(48deg);
+  }
+  23% {
+    transform: rotate(48deg);
+  }
+  23.5% {
+    transform: rotate(54deg);
+  }
+  24% {
+    transform: rotate(54deg);
+  }
+  24.5% {
+    transform: rotate(60deg);
+     }
+  25% {
+    transform: rotate(60deg);
+  }
+
+  25.5% {
+    transform: rotate(66deg);
+  }
+  26% {
+    transform: rotate(66deg);
+  }
+  26.5% {
+    transform: rotate(72deg);
+  }
+  27% {
+    transform: rotate(72deg);
+  }
+  27.5% {
+    transform: rotate(78deg);
+  }
+  28% {
+    transform: rotate(78deg);
+  }
+  28.5% {
+    transform: rotate(84deg);
+  }
+  29% {
+    transform: rotate(84deg);
+  }
+  29.5% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(90deg);
+  }
+
+   30.5% { 
+    transform:rotate(96deg); 
+  }
+  31% {
+    transform: rotate(96deg);
+  }
+  31.5% {
+    transform: rotate(102deg);
+  }
+  32% {
+    transform: rotate(102deg);
+  }
+  32.5% {
+    transform: rotate(108deg);
+  }
+  33% {
+    transform: rotate(108deg);
+  }
+  33.5% {
+    transform: rotate(114deg);
+  }
+  34% {
+    transform: rotate(114deg);
+  }
+  34.5% {
+    transform: rotate(120deg);
+     }
+  35% {
+    transform: rotate(120deg);
+  }
+
+  35.5% {
+    transform: rotate(126deg);
+  }
+  36% {
+    transform: rotate(126deg);
+  }
+  36.5% {
+    transform: rotate(132deg);
+  }
+  37% {
+    transform: rotate(132deg);
+  }
+  37.5% {
+    transform: rotate(138deg);
+  }
+  38% {
+    transform: rotate(138deg);
+  }
+  38.5% {
+    transform: rotate(144deg);
+  }
+  39% {
+    transform: rotate(144deg);
+  }
+  39.5% {
+    transform: rotate(150deg);
+  }
+  40% {
+    transform: rotate(150deg);
+  }
+
+  40.5% { 
+    transform:rotate(156deg); 
+  }
+  41% {
+    transform: rotate(156deg);
+  }
+  41.5% {
+    transform: rotate(162deg);
+  }
+  42% {
+    transform: rotate(162deg);
+  }
+  42.5% {
+    transform: rotate(168deg);
+  }
+  43% {
+    transform: rotate(168deg);
+  }
+  43.5% {
+    transform: rotate(174deg);
+  }
+  44% {
+    transform: rotate(174deg);
+  }
+  44.5% {
+    transform: rotate(180deg);
+     }
+  45% {
+    transform: rotate(180deg);
+  }
+
+  45.5% {
+    transform: rotate(186deg);
+  }
+  46% {
+    transform: rotate(186deg);
+  }
+  46.5% {
+    transform: rotate(192deg);
+  }
+  47% {
+    transform: rotate(192deg);
+  }
+  47.5% {
+    transform: rotate(198deg);
+  }
+  48% {
+    transform: rotate(198deg);
+  }
+  48.5% {
+    transform: rotate(204deg);
+  }
+  49% {
+    transform: rotate(204deg);
+  }
+  49.5% {
+    transform: rotate(210deg);
+  }
+  50% {
+    transform: rotate(210deg);
+  }
+
+  50.5% { 
+    transform:rotate(216deg); 
+  }
+  51% {
+    transform: rotate(216deg);
+  }
+  51.5% {
+    transform: rotate(222deg);
+  }
+  52% {
+    transform: rotate(222deg);
+  }
+  52.5% {
+    transform: rotate(228deg);
+  }
+  53% {
+    transform: rotate(228deg);
+  }
+  53.5% {
+    transform: rotate(234deg);
+  }
+  54% {
+    transform: rotate(234deg);
+  }
+  54.5% {
+    transform: rotate(240deg);
+     }
+  55% {
+    transform: rotate(240deg);
+  }
+
+  55.5% {
+    transform: rotate(246deg);
+  }
+  56% {
+    transform: rotate(246deg);
+  }
+  56.5% {
+    transform: rotate(252deg);
+  }
+  57% {
+    transform: rotate(252deg);
+  }
+  57.5% {
+    transform: rotate(258deg);
+  }
+  58% {
+    transform: rotate(258deg);
+  }
+  58.5% {
+    transform: rotate(264deg);
+  }
+  59% {
+    transform: rotate(264deg);
+  }
+  59.5% {
+    transform: rotate(270deg);
+  }
+  100% { 
+    transform: rotate(270deg); 
+  }
+}*/
+

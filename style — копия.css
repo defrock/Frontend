@@ -1,0 +1,62 @@
+
+.circle{
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.arrow {
+  width: 150px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  animation-name: tick;
+  animation-duration: 60s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}        
+
+.minut {
+  width: 140px;
+  height: 5px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  animation-name: tick;
+  animation-duration: 3600s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.hour {
+  width: 100px;
+  height: 5px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  animation-name: tick;
+  animation-duration: 5000s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tick {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+}
